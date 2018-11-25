@@ -1,0 +1,46 @@
+@import 'reset';
+
+$fontSize: 37.5;
+@function px2rem($px){
+	@return ($px / $fontSize) + rem;
+}
+
+@mixin center {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+span.iconfont {
+	color: #333;
+	font-size: px2rem(20); 
+}
+
+/*ebook阅读时菜单和标题动画样式*/
+.slide-up-enter,.slide-up-leave-to {
+	transform: translate3d(0,px2rem(108),0)
+}
+.slide-up-enter-to,.slide-up-leave,
+.slide-down-enter-to,.slide-down-leave {
+	transform: translate3d(0,0,0)
+}
+.slide-up-enter-active, .slide-up-leave-active,
+.slide-down-enter-active, .slide-down-leave-active,
+.fade-enter-active, .fade-leave-active,
+.slide-right-enter-active,.slide-right-leave-active{
+	transition: all .3s linear
+}
+.slide-down-enter,.slide-down-leave-to {
+	transform: translate3d(0,-100%,0)
+}
+.fade-enter,.fade-leave-to {
+	opacity: 0;
+}
+.fade-enter-to,.fade-leave {
+	opacity: 1;
+}
+.slide-right-enter, .slide-right-leave-to {
+	transform: translate3d(-80%,0,0);
+}
+.slide-right-enter-to, .slide-right-leave {
+	transform: translate3d(0,0,0);
+}
