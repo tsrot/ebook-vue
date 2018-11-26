@@ -1,0 +1,26 @@
+
+branches:
+  only:
+    - master
+
+language: node_js
+
+node_js:
+  - node
+
+install:
+  - npm install
+
+script:
+  - npm run build
+
+deploy:
+  provider: pages
+  local-dir: dist
+  skip-cleanup: true
+  github-token: $GH_TOKEN  # Set in travis-ci.org dashboard, marked secure
+  target-branch: product
+  keep-history: true
+  on:
+    branch: master
+
