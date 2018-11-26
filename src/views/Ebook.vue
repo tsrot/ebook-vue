@@ -34,7 +34,7 @@
 import TitleBar from '@/components/TitleBar.vue' 
 import MenuBar from '@/components/MenuBar.vue'
 import Epub from 'epubjs'
-const DOWNLOAD_URL = '/1365.epub'
+const DOWNLOAD_URL = '1365.epub'
 export default {
 	components: {
 		TitleBar,
