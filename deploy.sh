@@ -21,7 +21,7 @@ git remote add upstream "https://$GH_TOKEN@github.com/huijiesuan/huijiesuan.gith
 
 git fetch upstream
 
-git reset upstream/product
+git reset upstream/gh-pages
 
 echo "tsrot.github.io/ebook-vue" > CNAME
 
@@ -29,4 +29,4 @@ git add -A
 
 git commit -m "rebuild pages at ${rev}"
 
-git push -q upstream HEAD:product
+git push -q upstream HEAD:gh-pages
