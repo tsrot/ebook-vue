@@ -1,4 +1,5 @@
 # ebook-vue
+[![Build Status](https://www.travis-ci.org/tsrot/ebook-vue.svg?branch=master)](https://www.travis-ci.org/tsrot/ebook-vue)
 
 ## Project setup
 ```
